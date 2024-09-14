@@ -11,8 +11,7 @@ public class CowView extends JFrame {
 
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10); // เพิ่มระยะห่างระหว่างส่วนประกอบ
-
+        gbc.insets = new Insets(10, 10, 10, 10); 
         
         gbc.gridx = 0; 
         gbc.gridy = 0; 
