@@ -12,7 +12,7 @@ public class CowView extends JFrame {
 
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10); // เพิ่มระยะห่างระหว่างส่วนประกอบ
+        gbc.insets = new Insets(10, 10, 10, 10); 
 
         gbc.gridx = 0; 
         gbc.gridy = 0; 
@@ -29,7 +29,7 @@ public class CowView extends JFrame {
 
         resultLabel = new JLabel();
         scrollPane = new JScrollPane(resultLabel);
-        scrollPane.setPreferredSize(new Dimension(400, 200)); // ตั้งขนาดเริ่มต้น
+        scrollPane.setPreferredSize(new Dimension(400, 200)); 
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
         gbc.gridx = 0;
@@ -48,7 +48,7 @@ public class CowView extends JFrame {
     }
 
     public void setResult(String result) {
-        resultLabel.setText("<html><div style='font-size:14px;'><br>" 
+        resultLabel.setText("<html><div style='font-size:10px;'><br>" 
         + result.replace("\n", "<br>") + "</div></html>");
     }
 
